@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.hero{
+    width: 80%;
+    margin: auto;
+
+}
+
+.navBar{
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative;
+    
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -50px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.navBarIcons img{
+    height: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.navBarIcons{
+    margin-left: 40px;
+}
+
+.banner{
+    display: flex;
+    margin: 80px;
+}
+
+.leftColumn, .rightColumn{
+    flex-basis: 50%;
+}
+
+.rightColumn img{
+    width: 100%;
+}
+
+.searchBox{
+    display: flex;
+    width: 45%;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px 30px;
+}
+
+.searchBox img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.searchBox input{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+
+.leftColumn h1{
+    font-size: 100px;
+}
+
+.leftColumn h3{
+    font-size: 35px;
+}
+
+.leftColumn span{
+    color: #f14a60;
+}
+
+.leftColumn p{
+    font-size: 15px;
+    color: #999;
+    margin: 50px 0;
+
+}
+
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fb7381;
+    background: transparent;
+}
+.btn .primaryBtn{
+    background: linear-gradient(#fb7381, #f14a60);
+    color: #fff;
+    box-shadow: 0 2px 15px rgba(248, 38, 1);
+}
+.btn {
+    margin: 50px 0;
+}
+
+.socialIcons{
+    width: 200px;
+    text-align: center;
+    opacity: .4;
+    position: relative;
+    margin-left: 150px;
+}
+.socialIcons img{
+    height: 20px;
+    margin: 0 14px;
+}
+.socialIcons::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    background: #000;
+    left: -160px;
+    top: 10px;
+}
