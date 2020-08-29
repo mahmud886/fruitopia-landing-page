@@ -1,1 +1,4 @@
-# fruitopia-landing-page
+# Simple Fruitopia Landing Page
+## Technology Used
+- Html 
+- CSS
